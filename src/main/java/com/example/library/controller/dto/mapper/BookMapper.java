@@ -37,4 +37,12 @@ public class BookMapper {
 		Book book=bookService.getBookById(bookid);
 		return bookConverter.bookentityToBookDto(book);
 	}
+	
+	@SuppressWarnings("unused")
+	public BookDto deleteBook(Long bookid) {
+		Book book =bookService.deleteBook(bookid);
+		return null;
+	}
+	
+	
 }

@@ -11,4 +11,8 @@ public interface BookService {
 	public List<Book> listAllBook();
 	
 	public Book getBookById(Long bookid);
+	
+	public Book deleteBook(Long bookid);
+	
+	public Book updateBook(Book book);
 }

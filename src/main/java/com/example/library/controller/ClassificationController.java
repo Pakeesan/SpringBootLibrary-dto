@@ -49,7 +49,7 @@ public class ClassificationController {
 		}
 	
 	//delete classification
-	@DeleteMapping("/delete/{classificationid}")
+	@DeleteMapping("/deleteclass/{classificationid}")
 	public ResponseEntity<String> deleteClassification(@PathVariable("classificationid") Long classificationid) {
 		System.out.println(classificationid);
 		
